@@ -1,0 +1,466 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salud Mental en los Adolescentes del CECyT 11</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8fb;
+    color:#333;
+    line-height:1.8;
+}
+
+/* MENÚ */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(6px);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px 20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#4fc3f7;
+}
+
+/* PORTADA */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("img/estres.jpg.webp"); /* IMAGEN DE PORTADA */
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+/* SECCIONES */
+
+.section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.7rem;
+    color:#0d47a1;
+    margin-bottom:40px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.content{
+    padding:35px;
+}
+
+.content p{
+    text-align:justify;
+    margin-bottom:18px;
+}
+
+.content h3{
+    color:#1565c0;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.content ul{
+    margin-left:30px;
+}
+
+.content li{
+    margin-bottom:10px;
+}
+
+.destacado{
+    background:#e3f2fd;
+    border-left:8px solid #1976d2;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* INTEGRANTES */
+
+.integrantes{
+    text-align:center;
+}
+
+.integrantes p{
+    font-size:1.1rem;
+    margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.section{
+    padding:80px 5%;
+}
+
+.card img{
+    height:250px;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#analisis">Análisis</a>
+        <a href="#alternativas">Alternativas</a>
+        <a href="#evaluacion">Evaluación</a>
+        <a href="#integrantes">Integrantes</a>
+    </nav>
+</header>
+
+<!-- PORTADA -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <h1>Salud Mental en los Adolescentes del CECyT 11 "Wilfrido Massieu"</h1>
+
+        <p>
+            La salud mental es un elemento esencial para el desarrollo académico,
+            social y personal de los estudiantes. Conocer los factores que la afectan
+            permite generar propuestas que favorezcan el bienestar emocional de la
+            comunidad estudiantil.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ANÁLISIS DEL PROBLEMA -->
+
+<section class="section" id="analisis">
+
+    <h2 class="section-title">1. Análisis del Problema</h2>
+
+    <div class="card">
+
+        <!-- IMAGEN DEL ANÁLISIS -->
+        <img src="img/analisis.jpg.png" alt="Análisis del problema">
+
+        <div class="content">
+
+            <p>
+                La salud mental de los adolescentes se ha convertido en un tema de gran
+                importancia debido al aumento de casos relacionados con el estrés,
+                ansiedad y depresión. Dentro del CECyT 11 "Wilfrido Massieu", los
+                estudiantes enfrentan una elevada carga académica que puede generar
+                presión constante para obtener buenos resultados escolares.
+            </p>
+
+            <p>
+                Muchos alumnos deben equilibrar tareas, proyectos, exámenes y
+                actividades extracurriculares, lo que provoca cansancio físico y
+                emocional. Además, algunos enfrentan problemas familiares, económicos
+                o personales que afectan su estabilidad emocional.
+            </p>
+
+            <p>
+                Otro factor importante es el uso excesivo de redes sociales. La
+                comparación constante con otras personas, la búsqueda de aceptación y
+                la exposición a comentarios negativos pueden afectar la autoestima y
+                generar inseguridades.
+            </p>
+
+            <p>
+                Asimismo, la falta de información sobre salud mental hace que muchos
+                jóvenes no identifiquen los síntomas de ansiedad o depresión, o tengan
+                miedo de pedir ayuda por temor a ser juzgados.
+            </p>
+
+            <h3>Principales consecuencias</h3>
+
+            <ul>
+                <li>Disminución del rendimiento académico.</li>
+                <li>Problemas de concentración en clase.</li>
+                <li>Ausentismo escolar.</li>
+                <li>Baja autoestima.</li>
+                <li>Aislamiento social.</li>
+                <li>Estrés y ansiedad constantes.</li>
+                <li>Conflictos con compañeros y familiares.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ALTERNATIVAS -->
+
+<section class="section" id="alternativas">
+
+    <h2 class="section-title">2. Alternativas para Resolver el Problema</h2>
+
+    <div class="card">
+
+        <!-- IMAGEN DE ALTERNATIVAS -->
+        <img src="img/ScreenShot2021-03-23at9.54.33.avif" alt="Alternativas">
+
+        <div class="content">
+
+            <p>
+                Existen diversas estrategias que pueden implementarse para mejorar la
+                salud mental de los estudiantes y promover un ambiente escolar más
+                saludable.
+            </p>
+
+            <h3>Campañas de concientización</h3>
+
+            <p>
+                La realización de conferencias, carteles, actividades informativas y
+                eventos escolares puede ayudar a reducir los prejuicios relacionados
+                con la salud mental y fomentar una cultura de apoyo.
+            </p>
+
+            <h3>Talleres de manejo emocional</h3>
+
+            <p>
+                Los talleres permiten que los estudiantes aprendan técnicas para
+                controlar el estrés, fortalecer la autoestima, regular emociones y
+                mejorar la resolución de conflictos.
+            </p>
+
+            <h3>Fortalecimiento de la orientación psicológica</h3>
+
+            <p>
+                Contar con personal especializado facilita la atención de estudiantes
+                que presentan dificultades emocionales y permite realizar acciones de
+                prevención y seguimiento.
+            </p>
+
+            <h3>Actividades deportivas y culturales</h3>
+
+            <p>
+                El deporte, la música, el arte y otras actividades recreativas ayudan
+                a reducir los niveles de estrés y favorecen la convivencia entre los
+                estudiantes.
+            </p>
+
+            <h3>Capacitación docente</h3>
+
+            <p>
+                Los profesores pueden aprender a identificar señales de alerta y
+                canalizar a los estudiantes hacia los servicios de apoyo adecuados.
+            </p>
+
+            <h3>Espacios de apoyo estudiantil</h3>
+
+            <p>
+                Crear grupos de apoyo e integración fortalece la empatía, el sentido
+                de pertenencia y la comunicación entre compañeros.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EVALUACIÓN -->
+
+<section class="section" id="evaluacion">
+
+    <h2 class="section-title">
+        3. Evaluación de las Alternativas y Selección de la Mejor
+    </h2>
+
+    <div class="card">
+
+        <!-- IMAGEN DE EVALUACIÓN -->
+        <img src="img/istockphoto-157593000-612x612.jpg" alt="Evaluación">
+
+        <div class="content">
+
+            <p>
+                Después de analizar las diferentes alternativas, se evaluó el impacto,
+                la viabilidad y los beneficios que cada una puede aportar a la
+                comunidad estudiantil.
+            </p>
+
+            <p>
+                Las campañas de concientización son útiles para informar y sensibilizar
+                a los estudiantes, pero no ofrecen atención personalizada a quienes
+                presentan problemas emocionales.
+            </p>
+
+            <p>
+                Los talleres de manejo emocional brindan herramientas prácticas para
+                afrontar el estrés y la ansiedad; sin embargo, requieren una
+                participación constante para obtener resultados duraderos.
+            </p>
+
+            <p>
+                Las actividades deportivas y culturales favorecen el bienestar general,
+                aunque no siempre permiten identificar situaciones psicológicas
+                específicas.
+            </p>
+
+            <p>
+                La capacitación docente contribuye a detectar señales de riesgo, pero
+                no sustituye el apoyo profesional que algunos estudiantes necesitan.
+            </p>
+
+            <div class="destacado">
+
+                <h3>✔ Mejor alternativa seleccionada</h3>
+
+                <p>
+                    La mejor opción es fortalecer los servicios de orientación
+                    psicológica y complementarlos con talleres de manejo emocional.
+                    Esta alternativa permite brindar apoyo profesional especializado,
+                    detectar problemas de manera temprana y ofrecer herramientas para
+                    afrontar el estrés académico y personal.
+                </p>
+
+                <p>
+                    Además, puede combinarse con campañas informativas y actividades
+                    recreativas para lograr un impacto más amplio dentro de la
+                    comunidad estudiantil.
+                </p>
+
+            </div>
+
+            <h3>Conclusión</h3>
+
+            <p>
+                La salud mental es un aspecto fundamental para el desarrollo integral
+                de los estudiantes del CECyT 11. Implementar programas de apoyo
+                psicológico y educación emocional contribuirá a formar jóvenes más
+                saludables, resilientes y preparados para enfrentar los desafíos de su
+                vida académica y personal.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INTEGRANTES -->
+
+<section class="section" id="integrantes">
+
+    <h2 class="section-title">Integrantes del Proyecto</h2>
+
+    <div class="card">
+
+        <div class="content integrantes">
+
+            <h3>Equipo de Trabajo</h3>
+
+            <p>Alvares Romo Kenia Yuvaneli</p>
+            <p>Suárez Corona María Fernanda</p>
+            <p>Nopaltitla Cruces Christian</p>
+            <p>Gonzales Santana Fernanda</p>
+            <p>García Márquez Ethan</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        Proyecto Escolar - Salud Mental en los Adolescentes del
+        CECyT 11 "Wilfrido Massieu"
+    </p>
+
+</footer>
+
+</body>
+</html>
+```
